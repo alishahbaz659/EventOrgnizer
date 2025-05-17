@@ -32,19 +32,17 @@ This application is a desktop-based meeting management system that integrates wi
   <a href="Resources/app%20SS2.png" target="_blank">
     <img src="Resources/app%20SS2.png" alt="Application Dashboard" width="400" height="auto"/>
   </a>
-</p>
-
-<p align="center">
+  <br><br>
   <em>Application Dashboard: Main interface for meeting management</em>
 </p>
+
+<br>
 
 <p align="center">
   <a href="Resources/app%20SS1.png" target="_blank">
     <img src="Resources/app%20SS1.png" alt="Meeting Details" width="400" height="auto"/>
   </a>
-</p>
-
-<p align="center">
+  <br><br>
   <em>Meeting Details: View of event schedules and speaker information</em>
 </p>
 
