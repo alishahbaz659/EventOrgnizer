@@ -12,4 +12,4 @@ A meeting management application that organizes events, speakers, and schedules.
 ## Technologies
 
 - Visual Basic
-- JSON data storage 
+- JSON data storage
