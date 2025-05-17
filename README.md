@@ -2,20 +2,20 @@
 
 A meeting management application that organizes events, speakers, and schedules.
 
-## Screenshots
+## Project Overview
 
-![Application Dashboard](Resources/app%20SS2.png)
-*Application Dashboard: Main interface for meeting management*
+This application is a desktop-based meeting management system that integrates with web APIs to fetch, display, and synchronize meeting data. It provides a comprehensive interface for managing events, speakers, and schedules.
 
-![Meeting Details](Resources/app%20SS1.png)
-*Meeting Details: View of event schedules and speaker information*
+## Key Features
 
-## Features
-
-- Event management
-- Speaker profiles
-- Schedule organization
+- Event management and organization
+- Speaker profiles and participant management
+- Schedule visualization with countdowns
 - Meeting room booking
+- Real-time meeting data synchronization from remote APIs
+- Detailed meeting information display
+- SFTP-based file synchronization for meeting resources
+- Secure API authentication with credential management
 
 ## Technology Stack
 
@@ -26,17 +26,22 @@ A meeting management application that organizes events, speakers, and schedules.
 - **File Transfer**: SFTP protocol implementation using Renci.SshNet
 - **Data Storage**: Local file system for caching and storing meeting data
 
-## Project Overview
+## Screenshots
 
-This application is a desktop-based meeting management system that integrates with web APIs to fetch, display, and synchronize meeting data. It provides a comprehensive interface for managing events, speakers, and schedules.
+<p align="center">
+  <img src="Resources/app%20SS2.png" alt="Application Dashboard" width="400" height="auto"/>
+</p>
 
-### Key Features
+<p align="center">
+  <em>Application Dashboard: Main interface for meeting management</em>
+</p>
 
-- Real-time meeting data synchronization from remote APIs
-- Event schedule visualization with countdowns
-- Speaker and participant management
-- Detailed meeting information display
-- SFTP-based file synchronization for meeting resources
-- Secure API authentication with credential management
+<p align="center">
+  <img src="Resources/app%20SS1.png" alt="Meeting Details" width="400" height="auto"/>
+</p>
+
+<p align="center">
+  <em>Meeting Details: View of event schedules and speaker information</em>
+</p>
 
 This project demonstrates the ability to develop full-featured desktop applications using .NET technologies while integrating various protocols and data formats. 
