@@ -29,7 +29,9 @@ This application is a desktop-based meeting management system that integrates wi
 ## Screenshots
 
 <p align="center">
-  <img src="Resources/app%20SS2.png" alt="Application Dashboard" width="400" height="auto"/>
+  <a href="Resources/app%20SS2.png" target="_blank">
+    <img src="Resources/app%20SS2.png" alt="Application Dashboard" width="400" height="auto"/>
+  </a>
 </p>
 
 <p align="center">
@@ -37,7 +39,9 @@ This application is a desktop-based meeting management system that integrates wi
 </p>
 
 <p align="center">
-  <img src="Resources/app%20SS1.png" alt="Meeting Details" width="400" height="auto"/>
+  <a href="Resources/app%20SS1.png" target="_blank">
+    <img src="Resources/app%20SS1.png" alt="Meeting Details" width="400" height="auto"/>
+  </a>
 </p>
 
 <p align="center">
