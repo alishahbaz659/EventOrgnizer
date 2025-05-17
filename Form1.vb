@@ -43,7 +43,7 @@ Public Class Form1
 
         Try
             ' Set form properties with modern styling
-        Me.Text = "Conference File Sync - MCH Group"
+        Me.Text = "Meetings File Sync"
             Me.MinimumSize = New Size(1024, 768)
             Me.BackColor = Color.FromArgb(248, 249, 250)  ' Light gray background
             Me.Font = New Font("Segoe UI", 10.0F)
@@ -515,8 +515,8 @@ Public Class Form1
 
 
     Private Sub ButtonConnect_Click(sender As Object, e As EventArgs) Handles buttonConnect.Click
-        labelStatus.Text = "Status: Verbindung wird hergestellt..."
-        LogMessage("Verbindung wird hergestellt...")
+        labelStatus.Text = "Status: Connecting..."
+        LogMessage("Connecting...")
         FetchRoomData()
     End Sub
 
@@ -542,18 +542,18 @@ Public Class Form1
                     comboBoxRooms.Items.Add(eventItem("title").ToString())
                 Next
 
-                labelStatus.Text = "Status: Verbunden"
-                LogMessage("Event-Daten erfolgreich geladen.")
+                labelStatus.Text = "Status: Connected"
+                LogMessage("Event data successfully loaded.")
             Catch ex As Exception
-                labelStatus.Text = "Status: Verbindung fehlgeschlagen"
-                LogMessage("Fehler: " & ex.Message)
+                labelStatus.Text = "Status: Connection failed"
+                LogMessage("Error: " & ex.Message)
             End Try
         End Using
     End Sub
 
     Private Sub ButtonSelectFolder_Click(sender As Object, e As EventArgs) Handles buttonSelectFolder.Click
         Using folderDialog As New FolderBrowserDialog()
-            folderDialog.Description = "Select a folder to store conference files"
+            folderDialog.Description = "Select a folder to store meeting files"
             
             ' Set initial directory if a folder was previously selected
             If Not String.IsNullOrEmpty(selectedFolderPath) AndAlso Directory.Exists(selectedFolderPath) Then
@@ -572,7 +572,7 @@ Public Class Form1
                 labelFolder.Text = "Storage: " & displayPath
                 
                 ' Create log file path
-                logFilePath = Path.Combine(selectedFolderPath, "ConferenceSync.log")
+                logFilePath = Path.Combine(selectedFolderPath, "MeetingsSync.log")
                 
                 ' Create the log file or append to it if it exists
                 Try
@@ -584,11 +584,11 @@ Public Class Form1
                     
                     LogMessage("Folder selected: " & selectedFolderPath)
                     
-                    ' Create a subfolder for conference files
-                    Dim conferenceFolder = Path.Combine(selectedFolderPath, "ConferenceFiles")
+                    ' Create a subfolder for meeting files
+                    Dim conferenceFolder = Path.Combine(selectedFolderPath, "MeetingFiles")
                     If Not Directory.Exists(conferenceFolder) Then
                         Directory.CreateDirectory(conferenceFolder)
-                        LogMessage("Created subfolder: ConferenceFiles")
+                        LogMessage("Created subfolder: MeetingFiles")
                     End If
                     
                     ' If we have a selected room, trigger a sync
@@ -605,7 +605,7 @@ Public Class Form1
     End Sub
 
     Private Sub ButtonSyncFiles_Click(sender As Object, e As EventArgs) Handles buttonSyncFiles.Click
-        LogMessage("SFTP-Synchronisierung wird gestartet...")
+        LogMessage("Starting SFTP synchronization...")
         SyncFiles()
     End Sub
 

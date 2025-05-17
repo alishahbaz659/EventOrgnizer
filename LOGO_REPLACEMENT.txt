@@ -1,0 +1,11 @@
+LOGO REPLACEMENT INSTRUCTIONS
+
+Please replace the existing "mch_logo.png" with a new logo related to meeting organization.
+
+Suggested logo characteristics:
+1. Professional design related to meetings, calendars, or event organization
+2. Similar dimensions to the original mch_logo.png
+3. Save as PNG format with transparent background if possible
+4. Place in both the root directory and the Resources folder to ensure compatibility
+
+After replacing the logo, rebuild the application to see the changes. 

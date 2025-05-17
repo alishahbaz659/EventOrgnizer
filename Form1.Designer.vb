@@ -25,7 +25,7 @@
         buttonConnect.Name = "buttonConnect"
         buttonConnect.Size = New Size(75, 23)
         buttonConnect.TabIndex = 0
-        buttonConnect.Text = "Verbinden"
+        buttonConnect.Text = "Connect"
         ' 
         ' buttonSelectFolder
         ' 
@@ -33,7 +33,7 @@
         buttonSelectFolder.Name = "buttonSelectFolder"
         buttonSelectFolder.Size = New Size(75, 23)
         buttonSelectFolder.TabIndex = 1
-        buttonSelectFolder.Text = "Ordner wählen"
+        buttonSelectFolder.Text = "Select Folder"
         ' 
         ' buttonSyncFiles
         ' 
@@ -41,7 +41,7 @@
         buttonSyncFiles.Name = "buttonSyncFiles"
         buttonSyncFiles.Size = New Size(75, 23)
         buttonSyncFiles.TabIndex = 2
-        buttonSyncFiles.Text = "Dateien synchronisieren"
+        buttonSyncFiles.Text = "Sync Files"
         ' 
         ' comboBoxRooms
         ' 
@@ -56,7 +56,7 @@
         labelStatus.Name = "labelStatus"
         labelStatus.Size = New Size(100, 23)
         labelStatus.TabIndex = 4
-        labelStatus.Text = "Status: Nicht verbunden"
+        labelStatus.Text = "Status: Not connected"
         ' 
         ' labelFolder
         ' 
@@ -64,7 +64,7 @@
         labelFolder.Name = "labelFolder"
         labelFolder.Size = New Size(100, 23)
         labelFolder.TabIndex = 5
-        labelFolder.Text = "Speicherort: Nicht ausgewählt"
+        labelFolder.Text = "Storage: Not selected"
         labelFolder.Visible = False
         ' 
         ' textBoxLogs
@@ -87,7 +87,7 @@
         Controls.Add(labelFolder)
         Controls.Add(textBoxLogs)
         Name = "Form1"
-        Text = "Mediatech Sync"
+        Text = "Meetings File Sync"
         ResumeLayout(False)
         PerformLayout()
     End Sub
